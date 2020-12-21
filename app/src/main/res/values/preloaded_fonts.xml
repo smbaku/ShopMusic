@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alex_brush</item>
+        <item>@font/almendra_sc</item>
+        <item>@font/arbutus_slab</item>
+        <item>@font/bevan</item>
+        <item>@font/bree_serif</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/diplomata</item>
+    </array>
+</resources>

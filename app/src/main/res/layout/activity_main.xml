@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/musicShop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/music_shop" />
+
+        <TextView
+            android:id="@+id/saleText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:rotation="-30"
+            android:text="Sale \n10%"
+            android:textColor="#52EB17"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/bevan" />
+
+        <TextView
+            android:id="@+id/saleText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_centerInParent="true"
+            android:text="Sale 30%"
+            android:textColor="#DF0020"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:fontFamily="@font/bevan" />
+
+        <TextView
+            android:id="@+id/saleText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="35dp"
+            android:rotation="30"
+            android:text="Sale 20%"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:fontFamily="@font/bevan" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Select Item"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:textStyle="bold" />
+
+    <Spinner
+
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <ImageView
+        android:id="@+id/goodsImageViev"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cello"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/orderPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Order Price :"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderPriceTextView"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="8sp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/bungee_shade"
+
+
+            />
+
+        <TextView
+            android:id="@+id/currencyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderPriceTextView"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/priceTextView"
+            android:text="$"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/diplomata" />
+
+
+        <TextView
+            android:id="@+id/quantityTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="95dp"
+            android:layout_toRightOf="@+id/orderPriceTextView"
+            android:text="Quantity:"
+            android:textColor="@android:color/black"
+
+
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/quantityTitleTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/my_button"
+            android:gravity="center"
+            android:onClick="decreaseBtn"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantityTitleTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/minusBtn"
+            android:text="O"
+            android:textColor="@android:color/black"
+
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/quantityTitleTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/quantityTextView"
+            android:background="@drawable/my_button"
+            android:gravity="center"
+            android:onClick="increaseBtn"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:height="80dp"
+        android:background="@drawable/my_btn2"
+
+
+        android:text="Add to Cart"
+        android:onClick="addToCart"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
